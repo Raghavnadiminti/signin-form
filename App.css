@@ -1,0 +1,111 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin forwards 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+section { 
+  display: flex; 
+  gap: 10px; 
+  cursor: pointer; 
+}
+#form{
+  width:30vw;
+  height:30vw;
+  position: absolute;
+  left:40%;
+  top:20%;
+  padding:50px;
+  margin-bottom:8vw;
+  margin-top:-6vw;
+  margin-left:-6vw;
+
+  border:#61dafb 5px solid;
+  
+}
+.incls{
+  margin-right:30px;
+  margin-bottom:20px;
+}
+form{
+  display:flex;
+  flex-direction: column;
+}
+.low{
+ animation:Low 5s forwards;
+  margin-bottom:10px;
+
+}
+.high{
+  animation:high 5s forwards;
+  margin-bottom:10px;
+}
+.medium{
+  animation: mediu 5s forwards;
+  margin-bottom:10px;
+}
+.signinbtn{
+  margin-top:10px;
+}
+
+@keyframes Low{
+  from{width:1px;
+      height:1px;}
+  to{
+    width:80px;
+  height:2px;
+  background-color:red;
+  }
+}
+@keyframes mediu{
+  from{ width:100px;
+    height:2px;
+    background-color:red;}
+  to{
+    width:150px;
+  height:2px;
+  background-color:orange;
+  }
+}
+@keyframes high{
+  from{ width:150px;
+    height:2px;
+    background-color:orange;}
+  to{
+    width:300px;
+  height:2px;
+  background-color:green;
+  }
+}
+p{
+  color:red;
+}
+.warning{
+  color:red;
+}
+#ew{
+  color:green;
+}
